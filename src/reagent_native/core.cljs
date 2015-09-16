@@ -17,6 +17,5 @@
   [view
    [text (str "Hi from cljs!" @global-state)]])
 
-(.registerComponent (.-AppRegistry js/React)
-                    "ReagentNative"
-                    (fn [] (rt/as-class root)))
+(.registerRunnable (.-AppRegistry js/React) "ReagentNative"
+                   (fn [params] (r/render [root] (.-rootTag params))))
