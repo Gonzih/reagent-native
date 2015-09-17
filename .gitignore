@@ -9,3 +9,5 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+ReagentNative/android/.gradle/
+ReagentNative/index.android.js
