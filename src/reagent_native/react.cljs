@@ -5,6 +5,7 @@
 (set! js/React (js/require "react-native"))
 
 (adapt-react-classes text
+                     text-input
                      view
                      image)
 
